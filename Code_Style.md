@@ -154,5 +154,3 @@ These rules are **not enforced by PHP-CS-Fixer**, so they must be followed manua
 - `getByX()` or `get()` returning `Enumerable` for collections.
 - `persistMany()` for batch inserts.
 - `save()` for single create/update operations.
-
-Let me know if you'd like a printable PDF or checklist version!
