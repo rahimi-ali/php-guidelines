@@ -1,13 +1,30 @@
-# Testing
+# 🧪 Testing
 
-- Use PHPUnit.
+Ensure your codebase is robust, reliable, and maintainable by following these core testing practices.
 
-- Tests should generally cover the public interface of projects, it can be public methods for a library, api endpoints for an API backend or Module Interfaces in a modular monolith.
+## ⚡ Test Runner
 
-- No hard rules on coverage but using it can help with removing unused code, etc.
+- **Framework:** Use [PHPUnit](https://phpunit.de/) for all tests.
 
-- Feature tests for all API endpoints and Module API Interface methods.
+## 📏 Coverage Guidelines
 
-- If a middleware is disabled in Feature tests make sure to unit test it.
+- **What to Test:**
+  - **Public Interfaces:**
+    - For libraries: _public methods_
+    - For API backends: _API endpoints_
+    - For modular monoliths: _Module Interfaces_
+- **Coverage:**
+  - No hard minimums, but strive for meaningful coverage to catch regressions and remove dead code.
 
-- Use `#[Test]` attribute syntax for test cases and use snake case to make cases easier to read.
+## 🧩 Test Types
+
+- **Feature Tests:**
+  - Required for **all API endpoints** and **Module API Interface methods**.
+- **Middleware:**
+  - If middleware is disabled or bypassed in feature tests, ensure you write dedicated **unit tests** for it.
+
+## 📝 Test Syntax
+
+- **Use** the `#[Test]` attribute for all test methods.
+- **Naming:**
+  - Use **snake_case** for test method names to maximize readability.

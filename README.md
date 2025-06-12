@@ -1,11 +1,10 @@
-# Snapp Market Pro Guidelines
+# PHP Guidelines
 
 ## Sections
 
-- [Code Style](Code_Style.md)
-- [Design and Architecture](Design_and_Architecture.md)
-- [Testing](Testing.md)
-- [Quality Tools](Quality_Tools.md)
-- [API Documentation](API_Documentation.md)
-- [RESTful API Practices](RESTful_API.md)
-- [Version Control](Version_Control.md)
+- [🏛️ Design & Architecture](Design_and_Architecture.md)
+- [✅ Code Style](Code_Style.md)
+- [🧪 Testing](Testing.md)
+- [🗂️ Version Control](Version_Control.md)
+- [📚 API Documentation](API_Documentation.md)
+- [🛠️ Quality Tools](Quality_Tools.md)

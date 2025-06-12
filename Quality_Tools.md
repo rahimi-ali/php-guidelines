@@ -1,11 +1,17 @@
-# Quality Tools
+# 🛠️ Quality Tools
 
-## PhpStan
-- Use PhpStan for static analysis.
-- Level 8 is a good default as it is much more feasible than level 9 yet strict enough that it can stop many major bugs.
+## 🔎 PhpStan — Static Analysis
 
-## PHP-CS-FIXER
-php-cs-fixer config:
+- **Purpose:** Detects bugs, dead code, and type issues before they reach production.
+- **Recommended Level:**
+  - **Rushed:** Level 7
+  - **Standard:** Level 8 is a good default as it is much more feasible than level 9 yet strict enough that it can stop many major bugs.
+
+## 🧹 PHP-CS-FIXER — Code Style Enforcement
+
+- **Purpose:** Automatically formats code to match defined standards, catching style issues before review.
+- php-cs-fixer config:
+
 ```php
 [
     '@PSR12' => true,
@@ -44,5 +50,8 @@ php-cs-fixer config:
         'elements' => ['method' => 'one']
     ],
     'modernize_types_casting' => true,
+    'nullable_type_declaration' => [
+        'syntax' => 'union'
+    ],
 ]
 ```
